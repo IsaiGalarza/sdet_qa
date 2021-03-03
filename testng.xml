@@ -1,0 +1,17 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="4" name="Regression-Modulo-Ventas">
+  <test thread-count="4" name="Test1">
+  
+    <parameter name="username" value="admin"></parameter>  
+  
+    <classes>
+      <class name="com.igalarza.testng.TestNGCaseDemo">
+      	<methods>
+      		<include name="miPrueba"/>
+      		<include name="a_miPrueba"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 
